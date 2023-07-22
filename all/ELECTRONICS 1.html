@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="eng">
+    <head>
+        <style>
+            *{
+    background-color: rgb(240, 235, 235);
+    margin-right: 10px;
+    margin-left:-10px;
+}
+
+/*figure*/
+ #figure{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-top:40px;
+    
+
+}
+
+/*title and cost*/
+#item_name{
+            font-size:20px;
+            margin-left: 900px;
+            margin-top:-400px;
+            font-size:30px;
+            color:rgb(149, 141, 141);
+}
+#cost{
+        font-size:30px;
+        margin-left: 920px;
+}
+
+#figure img{
+    border:5px;
+    border-color: rgb(244, 9, 48);
+    border-style: solid;
+    border-radius: 20px;
+}
+/*add cart button*/
+#buy_button{
+                width:100px;
+                height:50px;
+                display: center;
+                font:200px;
+                font-weight: bolder;
+                color:rgb(238, 74, 102);
+                border:1px;
+                border-style:double;
+                justify-content: center;
+                background-color: white;
+                margin-left: 400px;
+                
+}
+#buy_button:hover{
+    background-color:rgb(74, 37, 241);
+    color:white;
+    cursor:pointer;
+}
+
+/*download button*/
+#buy_button_down{
+    width:100px;
+    height:50px;
+    display: center;
+    font:200px;
+    font-weight: bolder;
+    color:rgb(241, 240, 240);
+    border:1px;
+    border-style:double;
+    background-color:rgb(250, 11, 51);
+    justify-content: center;
+    margin-left: 20px;
+    margin-top:40px;
+    
+}
+
+/*select size_buttons*/
+#h5{
+        font-size:20px;
+        margin-left: 900px;
+
+}
+#size_button{
+                font-size:15px;
+                font-weight:bolder;
+                padding-left:15px;
+                padding-right:15px;
+                padding-top:10px;
+                padding-bottom:10px;
+                border-radius: 80px;
+                margin-left: 950px;
+                margin-top:10px;
+                background-color: white;
+}
+#size_button:hover{
+                    background-color:rgb(241, 37, 71);
+                    color:white;
+                    cursor: pointer;
+}
+
+/*product details*/
+#p{
+    margin-left: 900px;
+                margin-top:10px;
+                font-size: large;
+                
+}
+
+
+        </style>
+    </head>
+    <body>
+        <!--a link css-->
+        <link rel="stylesheet" href="womans_ware.css">
+        <!--woman ware 01-->
+    <section id="figure_section">
+        <figure id="figure"><img src="https://images.meesho.com/images/products/9768573/cb29a_400.webp" alter="Led Lights Combo" id="img"></figure>
+        <!--download and add cart button-->
+        <input type="button" name="button" value="Add to Cart" id="buy_button">
+        <input type="button" name="button" value="Buy Now" id="buy_button_down">
+    <!--Descripition-->
+
+        <!--title-->
+        <h5 id="item_name">Led Lights Combo</h5>
+
+        <div><h3 id="cost">Rs 342</h3></div>
+    
+    </section>
+
+        <section id="section_button">
+        <!--select size-->
+            
+            <h5 id="h5">Select size</h5>
+            <!--size buttons-->
+            <input type="button" name="button" value="M" id="size_button">
+            <input type="button" name="button" value="S" id="size_button">
+            <input type="button" name="button" value="XL" id="size_button">
+            <input type="button" name="button" value="L" id="size_button">
+        </section>
+
+        <!--Product Details-->
+        <section id="section_details">
+            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Led Lights Combo </p>
+            <div><p id="p">Item: Electronics</p></div>
+            <div><p id="p">Item Type:Combo</p></div>
+            <div><p id="p">Material:Plastic</p></div>
+            <div><p id="p">Item sizes: 4cm, 6cm, 8cm</p></div>
+            
+        </section>
+
+    </body>
+</html>

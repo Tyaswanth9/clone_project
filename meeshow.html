@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>clone_website</title>
+    <style>
+        /*body*/
+        *{
+            margin:0px;
+            font-family: 'mukta',Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+            
+            
+            
+        }
+        
+        /*first nav*/
+        
+        #first_nav{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                    padding-bottom:10px;
+                    padding-top:20px;
+                   
+                    
+        }
+        /*meeshow logo*/
+        #first_nav img{
+                        width:400px;
+                        height: 100px;
+                        margin-left:-100px;
+                        margin-top: -20px;
+                        margin-bottom:-10px;
+                        background-color: white;
+        }
+        /*search*/
+        #first_nav input{
+                        font-size:20px;
+                        border-radius: 5px;
+                        margin-top:10px;
+                        margin-left:-20px;
+        }
+        
+        /*1st nav border*/
+        
+        #p_supplier{
+            border-right: 2px;
+            border-right-style: double;
+            border-right-width: 1px;
+            border-left: 1px;
+            border-left-style: double; 
+            padding-right: 5px;
+            padding-left: 5px;
+        
+           
+        }
+        
+        /*img button*/
+        #img_button{
+            font-size:20px;
+            font-weight: bold;
+            border-radius:5px;
+            border-color:yellow;
+            border-width: 1px;
+            border-style:none;
+            width:300px;
+            height:50px;
+            display:flex;
+            justify-content:left;
+            
+        }
+        
+        #img_button:hover{
+            background-color:rgb(248, 9, 49);
+            color:rgb(243, 238, 238);
+            cursor: pointer;
+            
+        }
+        
+        
+        /*second_nav*/
+        
+        #second_nav{
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-around;
+                        padding-bottom:10px;
+                        padding-top:10px;
+                        font-size:17px;
+                        align-content: center;
+                        
+        
+        }
+        
+        
+        
+        /*hover effect*/
+        #second_nav p:hover{
+                            color:rgb(233, 6, 165);
+                            background-color: rgb(243, 242, 240);
+                            font-weight: bold;
+                            cursor:pointer;
+        }
+        
+        /*img_nav*/
+        #img_nav{
+                        display: flex;
+                        justify-content: center;
+                        
+        }
+        
+        /*img_nav_p_border*/
+        
+        #img_nav_p{
+                    border-right: 2px;
+                    border-right-style: double;
+                    border-right-width: 1px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+        
+        }
+        
+        /*1st img*/
+        #first_offier_img{
+                            width: 800px;
+                            height: 500px;
+                            
+        
+        }
+        
+        #main_img_nav{
+            display: flex;
+            justify-content: center;
+            padding-bottom:10px;
+            padding-top:10px;
+            text-align: center;
+            
+        }
+        
+        
+        /*1st text*/
+        #h2{
+            padding-top:100px;
+            font-size:40px;
+            display:flex;
+            justify-content: center;
+            justify-content: space-around;
+            font-size:40px;
+            background-color:white;
+            width: 400px;
+            height: 330px;
+            border-right:none;
+            border-right-style:none;
+           
+        }
+        /*1st small nav*/
+        #img_nav_p{
+                    
+                    width:100px;
+                    height:50px;
+                    justify-content:center;
+        
+                    
+        }
+        /*small nav*/
+        #small_nav{
+                    margin-top:-300px;
+                    background-color: white;
+                     width: 400px;
+                    height: 330px;
+                    display: flex;
+                    justify-content: center;
+                    padding-top:170px;
+        
+        }
+        #small_nav p{
+                        margin-right:9px;
+        }
+        /*img_button*/
+        #button{
+                margin-top:-100px;
+        
+                
+        }
+        /*center heading*/
+        #second_h1{
+                    display: flex;
+                    justify-content: center;
+                    font-size:30px;
+                    background-color:white;
+                    margin-left: 30px;
+                    justify-content: space-around;
+                    color:rgb(233, 80, 105);
+        
+        }
+        
+        /*resaller img*/
+        #last_img{
+            width: 1000px;
+            height: 400px;
+            border: 1px;px;
+            border-style: double;
+            border-radius:2px;
+            border-color:rgb(238, 11, 49);
+            display: flex;
+            justify-content: center;
+            margin-left: 300px;
+            margin-top:20px;
+        }
+        /*producte imgs*/
+        #figure{
+                width: 400px;px;
+                height: 500px;
+                border: 7px;
+                border-radius:5px;
+                border-style: solid;
+                border-color:gray;
+                padding-top:4px;
+                padding-bottom:4px;
+                padding-left:4px;
+                padding-right:4px;
+                display: flex;
+                justify-content: center;
+                margin-top:10px;
+                margin-left:40px;
+        }
+        /*content about the pic*/
+        #td_h5{
+                text-align: center;
+                padding-top:10px;
+                font-size:25px;
+                color:rgb(149, 141, 141)
+        }
+        #td_h5_cost{
+                text-align: center;
+                padding-top:10px;
+                font-size:25px;
+                color:blueviolet;
+        }
+        /*downlod button*/
+        #td_h5_button{
+                        font-size:20px;
+                        width: 200px;
+                        height:30px;
+                        margin-left: 110px;
+                        margin-top:10px;
+        }
+        #td_h5_button:hover{
+            background-color:rgb(121, 70, 193);
+            color:rgb(234, 231, 231);
+            cursor: pointer;  
+        }
+        /*producte imgs*/
+        #img{width: 400px;px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+        
+        }
+       
+        
+        /*foot*/
+        #foot{
+        height: 200px;
+        background-color: rgb(246, 204, 211);
+        margin:0px;
+        padding-right: 100px;
+}
+#td_01{
+    padding-top:10px;
+    padding-left: 50px;
+}
+#td_02{
+        padding-top:10px;
+        padding-left: 150px;
+}
+
+#td_02_h5{
+        padding-top:15px;
+        font-size:medium;
+}
+
+#td_03{
+    padding-top:10px;
+    padding-left: 150px;
+}
+
+#td_02_h6{
+    padding-top:15px;
+    font-size:medium;
+}
+
+#td_04{
+    padding-top:10px;
+    padding-left: 100px;
+}
+
+/*icons& bottom*/
+#icons{
+        width:60px;
+        height:60px;
+        padding-right:20px;
+
+}
+#icons:hover{
+                cursor:pointer;
+                color:black;
+}
+
+#icons_pro{
+    width:10px;
+    height:10px;
+    
+
+}
+#icons_download{
+    width: 10px;
+    height: 10px;
+}
+
+/*top*/
+#p{
+    justify-content: center;
+    margin-top: 20px;
+}
+#p:hover{
+            cursor:progress;
+            background-color: bisque;
+}
+/*details*/
+#details{
+    text-align: center;
+                padding-top:10px;
+                font-size:25px;
+                color:rgb(255, 23, 61);
+                
+                
+                
+}
+#img:hover{
+        cursor:alias;
+}
+/*profile*/
+#profiledetails{
+        width: 70px;
+        height: 30px;
+        font-size:10px;
+
+}
+#pro_input{
+            border-radius: 5px;
+            padding:2px;
+}
+#profiledetails:hover{
+                background-color:blue;
+                color:rgb(248, 244, 245);
+
+}
+
+
+        
+        </style>
+</head>
+
+
+<body>
+    <!--link css-->
+    <link rel="stylesheet" href="mee.css">
+    <!--1st nav-->
+    <section>
+        <nav id="first_nav">
+            <img id="meeshow_log" src="https://images.livemint.com/img/2022/03/23/1600x900/Meesho_1648023411457_1648023418806.jpg" alt="meeshow_log">
+            <section id="search">
+                <input type="search" placeholder="Try sarees,kurti or search by any" id="search_bar">
+            </section>
+            <section>
+               <p id="p">Download</p>
+            </section>
+            <section>
+                
+                <p id="p_supplier"> Become <br>  a<br>Supplier </p>
+            </section>
+            <section>
+                <details>
+                    <summary>profile log in</summary>
+                    
+                <forms>
+                    <legend>Enter User name</legend>
+                        <input type="email" name="user name" placeholder="user name" id="pro_input">
+                        <legend>Password</legend>
+                        <input type="password" name="password" placeholder="password" id="pro_input">
+                        <br>
+                       <a href="file:///E:/vs%20code/final_meeshow/meeshow.html">
+                         <input type="submit" name="button" value="submit" id="profiledetails">
+                        </a>
+                </forms>
+                </details>
+            </section>
+         </nav>
+    </section>
+
+    <!--secon nav p, hover-->
+    <hr>
+    <section id="s_hr">
+        
+            <nav id="second_nav">
+                <p>womans ware</p>
+                <p>Mens ware</p>
+                <p>Kids ware</p>
+                <p>Bags</p>
+                <p>Foot ware</p>
+                
+                <p>Electronics</p>
+            
+            </nav>
+        
+        
+    </section>
+    <hr>
+    <!--1st officer img-->
+    <section id="main_img_nav">
+        
+        
+        <!--1st officer img text_list_ul-->
+            <list>
+                <ul>
+            <h1 id="frist_main_text"><h2 id="h2">Lowest Prices <BR>
+            Best Quality <BR>
+            Shopping</h1>
+             <!--img button-->
+            <div id="button">
+                <button>
+                <input type="button" id="img_button" name="button" style="background-color: rgb(249, 8, 48);" value="Download the meeshow App">  
+             </button>
+             </div>
+         </h2><br></ul>
+         <div>
+         <ul>
+            <nav id="small_nav">
+                <p>Free<br>Delivery</p>
+                <p>Cash on <br>Delivery</p>
+                <p>Easy<br>Returns</p>
+            </nav>
+         </ul>
+        </div>
+         
+        </list>
+           <!--img button-->
+           
+         <!--1st officer img nav-->
+    
+
+         <img id="first_offier_img" src="https://images.meesho.com/images/marketing/1687149525469_512.webp" alter="first_offier_img">
+            
+        </section>
+
+        <!--Top categories to chose form-->
+        <hr>
+        <section>
+            <br>
+            <h6 id="second_h6"><h1 id="second_h1">Top Categories to choose</h1>
+            <div><h1 id="second_h1">from</h1></div>
+            <br><br>
+        </section>
+        <hr>
+        <section id="list">
+            <!--womens ware-->
+            <section>
+                <br>
+                <h6 id="second_h6"><h1 id="second_h1">womens ware</h1>
+                <div><h1 id="second_h1">from</h1></div>
+                <br><hr><br>
+            </section>
+            <table id="table">
+                <tr id="table">
+                    <!--womens ware img 1-->
+                <td id="td">
+                   <a href="file:///E:/vs%20code/final_meeshow/all/WOMENS%20WARE%201.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/205379790/d7cbh_512.webp" alter="Kurties" id="img"></figure>
+                </a>
+                    <h5 id="td_h5">womens Kurtie</h5>
+                    <h5 id="td_h5_cost">Rs 389/- </h5>
+                <!--details-->
+                    <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Kurties </p>
+            <div><p id="p">Item: womens ware</p></div>
+            <div><p id="p">Item colth type:Silk</p></div>
+            <div><p id="p">Pattern:Printeded</p></div>
+                        </details>
+                    <!--women ware button 1-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/WOMENS%20WARE%201.html" id="a" >
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                        
+                
+                <td id="td">
+                    <!--womens ware img 2-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%202.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/27071947/b8d87_512.webp" alter="Panjabies" id="img"></figure>
+                </a>
+                    <h5 id="td_h5">Womens Panjabies</h5>
+                    <h5 id="td_h5_cost">Rs 559/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Panjabies </p>
+                        <div><p id="p">Item: womans ware</p></div>
+                        <div><p id="p">Item colth type:Cotton</p></div>
+                        <div><p id="p">Pattern:Designed</p></div>
+                        </details>
+                    <!--women ware button 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%202.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+                </td>
+
+                <td id="td">
+                    <!--womens ware img 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%203.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/216768099/czqiq_512.webp" alter="Sarees" id="img"></figure>
+                </a>
+                    <h5 id="td_h5">Womens Saries</h5>
+                    <h5 id="td_h5_cost">Rs 980/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Silk Sarees </p>
+            <div><p id="p">Item: womens ware</p></div>
+            <div><p id="p">Item colth type:Silk</p></div>
+            <div><p id="p">Pattern:non-printed</p></div>
+                            </details>
+                    <!--women ware button 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%203.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+                </td>
+                </tr>
+                
+                <tr>
+                <td id="td">
+                    <!--womens ware img 4-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%204.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/205379790/eavrv_512.webp" alter="Kurties" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">womens Kurties</h5>
+                    <h5 id="td_h5_cost">Rs 657/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Kurties </p>
+            <div><p id="p">Item: womens ware</p></div>
+            <div><p id="p">Item colth type:Cotton</p></div>
+            <div><p id="p">Pattern:printeded</p></div>
+                            </details>
+                    <!--women ware button 4-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%204.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+
+                <td id="td">
+                    <!--womens ware img 5-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%205.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/42084119/pjpup_512.webp" alter="Sarees" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">womens Sarees</h5>
+                    <h5 id="td_h5_cost">Rs 1211/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Pattu Sarees</p>
+            <div><p id="p">Item: womens ware</p></div>
+            <div><p id="p">Item colth type:Pattu</p></div>
+            <div><p id="p">Pattern:non-printeded</p></div>
+                            </details>
+                    <!--women ware button 5-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%205.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                <td id="td">
+                    <!--womens ware img 6-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%206.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/162477503/xxs0g_512.webp" alter="Panjabies" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">womens panjabies</h5>
+                    <h5 id="td_h5_cost">Rs 891/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Panjabies </p>
+            <div><p id="p">Item: womens ware</p></div>
+            <div><p id="p">Item colth type:Cotton</p></div>
+            <div><p id="p">Pattern:non-printeded</p></div>
+                            </details>
+                    <!--women ware button 6-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/womans_ware%206.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                </tr>
+            </table><br>
+            <!--mens ware-->
+            <hr>
+            <section>
+                <br>
+                <h6 id="second_h6"><h1 id="second_h1">mens ware</h1>
+                <div><h1 id="second_h1">from</h1></div>
+                <br><hr><br>
+            </section>
+            <table>
+                <tr>
+                <td id="td">
+                     <!--mens ware img 1-->
+                     <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE1.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/164756011/1059y_512.webp" alter="Shirt" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">Shirt</h5>
+                    <h5 id="td_h5_cost">Rs 614/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Shirt </p>
+            <div><p id="p">Item:Mens Ware</p></div>
+            <div><p id="p">Item colth type:Cotton</p></div>
+            <div><p id="p">Pattern:Slim Fit</p></div>
+                            </details>
+                    <!--mens ware button 1-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE1.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                <td id="td">
+                    <!--mens ware img 2-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE2.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/94890701/ov6bl_512.webp" alter="Jeans" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">Jeans</h5>
+                    <h5 id="td_h5_cost">Rs 1339/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+                            <p id="p">Name:Jeans </p>
+                            <div><p id="p">Item: Mens Ware</p></div>
+                            <div><p id="p">Item colth type:Cotton</p></div>
+                            <div><p id="p">Pattern:Plain</p></div>
+                            </details>
+                    <!--mens ware button 2-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE2.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                <td id="td">
+                    <!--mens ware img 3-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%203.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/9816419/5659f_512.webp" alter="T-shirt" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">T-shirt</h5>
+                    <h5 id="td_h5_cost">Rs 450/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+                            <p id="p">Name:T-Shirt </p>
+                            <div><p id="p">Item: Mens Ware</p></div>
+                            <div><p id="p">Item colth type:Cotton</p></div>
+                            <div><p id="p">Pattern:Plain</p></div>
+                            </details>
+                    <!--mens ware button 3-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%203.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                </tr>
+                
+                <tr>
+                <td id="td">
+                    <!--mens ware img 4-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MENS%20WARE%204.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/163669558/h9tmj_512.webp" alter="Jeans" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">Jeans</h5>
+                    <h5 id="td_h5_cost">Rs 850/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+                            <p id="p">Name:Jeans</p>
+                            <div><p id="p">Item: Mens Ware</p></div>
+                            <div><p id="p">Item colth type:Cotton</p></div>
+                            <div><p id="p">Pattern:Plain</p></div>
+                            </details>
+                    <!--mens ware button 4-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MENS%20WARE%204.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                <td id="td">
+                    <!--mens ware img 5-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%205.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/215987798/xs4hj_512.webp" alter="T-shirt" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">T-shirt</h5>
+                    <h5 id="td_h5_cost">Rs 360/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:T-Shirt</p>
+            <div><p id="p">Item: Mens Ware</p></div>
+            <div><p id="p">Item colth type:Cotton</p></div>
+            <div><p id="p">Pattern:Printeded</p></div>
+                            </details>
+                    <!--mens ware button 5-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%205.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                <td id="td">
+                    <!--mens ware img 6-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%206.html" id="a">
+                    <figure id="figure"><img src="https://images.meesho.com/images/products/287996259/lqpa1_512.webp" alter="Shirt" id="img"></figure>
+                    </a>
+                    <h5 id="td_h5">Shirt</h5>
+                    <h5 id="td_h5_cost">Rs 771/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+                            <p id="p">Name:Shirt</p>
+                            <div><p id="p">Item:Mens Ware</p></div>
+                            <div><p id="p">Item colth type:Cotton</p></div>
+                            <div><p id="p">Pattern:Half Hands</p></div>
+                            </details>
+                    <!--mens ware button 6-->
+                    <a href="file:///E:/vs%20code/final_meeshow/all/MEN%20WARE%206.html" id="a">
+                    <input type="button" name="button" value="Buy now" id="td_h5_button">
+                    </a>
+                </td>
+                </tr>
+
+            </table><br>
+          <!--kids ware--> 
+          <hr>
+           <section>
+            <br>
+            <h6 id="second_h6"><h1 id="second_h1">kids ware</h1>
+            <div><h1 id="second_h1">from</h1></div>
+            <br><br>
+        </section>
+        <hr>     
+          <table>
+            <tr>
+            <td id="td">
+                <!--kids ware img 1-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%201.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/153450944/qhwjp_512.webp" alter="Tawale" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Tawale</h5>
+                <h5 id="td_h5_cost">Rs 339/- </h5>
+                    <!--details-->
+                        <details id="details">
+                            <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Tawale </p>
+            <div><p id="p">Item: Kids ware</p></div>
+            <div><p id="p">Item colth type:Wool</p></div>
+            <div><p id="p">Pattern:printeded</p></div>
+            </details>
+                <!--kids ware button 1-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%201.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--kids ware img 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%202.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/112995867/gsdn5_512.webp" alter="Moscito" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Moscito</h5>
+                <h5 id="td_h5_cost">Rs 1106/- </h5>
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+                    <p id="p">Name:Moscito Net </p>
+                    <div><p id="p">Item: Kids Ware</p></div>
+                    <div><p id="p">Item colth type:Cotton</p></div>
+                    <div><p id="p">Pattern:Design</p></div>
+    </details>
+                <!--kids ware button 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%202.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--kids ware img 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%203.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/301416729/y4hu8_512.webp" alter="Blanket" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Blanket</h5>
+                <h5 id="td_h5_cost">Rs 990/- </h5>
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Blanket </p>
+            <div><p id="p">Item: Kids Ware</p></div>
+            <div><p id="p">Item colth type:Jute</p></div>
+            <div><p id="p">Pattern:Plain/p></div>
+    </details>
+                
+                <!--kids ware button 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%203.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            </tr>
+            
+            <tr>
+            <td id="td">
+                <!--kids ware img 4-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%204.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/198497008/rlwbw_512.webp" alter="Blanket" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Blanket</h5>
+                <h5 id="td_h5_cost">Rs 351/- </h5>
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Blanket </p>
+            <div><p id="p">Item: Kids ware</p></div>
+            <div><p id="p">Item colth type:Wool</p></div>
+            <div><p id="p">Pattern:Plain</p></div>
+    </details>
+                <!--kids ware button 4-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%204.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--kids ware img 5-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%205.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/148666392/fg1c9_512.webp" alter="Mocsito Net" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Moscito Net</h5>
+                <h5 id="td_h5_cost">Rs 990/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Moscito Net</p>
+                        <div><p id="p">Item:Kids Ware</p></div>
+                        <div><p id="p">Item colth type:Cotton</p></div>
+                        <div><p id="p">Pattern:Design</p></div>
+        </details>
+                <!--kids ware button 5-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%205.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--kids ware img 6-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%206.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/278950512/p31y5_512.webp" alter="Sleeping Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Sleeping Bag</h5>
+                <h5 id="td_h5_cost">Rs 499/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Sleeping Bag </p>
+                        <div><p id="p">Item:Kids Ware</p></div>
+                        <div><p id="p">Item colth type:Jute</p></div>
+                        <div><p id="p">Pattern:Design</p></div>
+        </details>
+                <!--kids ware button 6-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/KIDS%20WARE%206.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            </tr>
+        </table><br>
+          <!--Bags--> 
+          <hr>
+          <section>
+            <br>
+            <h6 id="second_h6"><h1 id="second_h1">Bags</h1>
+            <div><h1 id="second_h1">from</h1></div>
+            <br><hr><br>
+        </section>      
+        <table>
+            <tr>
+            <td id="td">
+                <!--Bags img 1--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%201.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/261732787/bdtw2_512.webp" alter="Hand Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Hands Bag</h5>
+                <h5 id="td_h5_cost">Rs 350/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+            <p id="p">Name: Hand Bag </p>
+            <div><p id="p">Item: Bags</p></div>
+            <div><p id="p">Item colth type:Plastic</p></div>
+            <div><p id="p">Pattern:printeded</p></div>
+        </details>
+                <!--Bags button 1--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%201.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--Bags img 2--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%202.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/252017582/xburm_512.webp" alter="College Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">College Bag</h5>
+                <h5 id="td_h5_cost">Rs 658/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:College Bag </p>
+                        <div><p id="p">Item:Bags</p></div>
+                        <div><p id="p">Item colth type:Cotton</p></div>
+                        <div><p id="p">Pattern:Plain</p></div>
+        </details>
+                <!--Bags button 2--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%202.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--Bags img 3--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%203.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/261732787/bdtw2_512.webp" alter="Hand Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Hand Bag</h5>
+                <h5 id="td_h5_cost">Rs 350/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+            <p id="p">Name: Hand Bag </p>
+            <div><p id="p">Item: Bags</p></div>
+            <div><p id="p">Item colth type:Plastic</p></div>
+            <div><p id="p">Pattern:printeded</p></div>
+        </details>
+                <!--Bags button 3--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%203.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            </tr>
+            
+            <tr>
+            <td id="td">
+                <!--Bags img 4--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%204.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/308014014/xpzjk_512.webp" alter="School Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">School Bag</h5>
+                <h5 id="td_h5_cost">Rs 771/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+            <p id="p">Name:School Bag </p>
+            <div><p id="p">Item: Bags</p></div>
+            <div><p id="p">Item colth type:Synthetic</p></div>
+            <div><p id="p">Pattern:Plain</p></div>
+        </details>
+                <!--Bags button 4--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%204.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--Bags img 5--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%205.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/307967678/zbuoy_512.webp" alter="Hand Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Hand Bag</h5>
+                <h5 id="td_h5_cost">Rs 441/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Hand Bag</p>
+                        <div><p id="p">Item: Bags</p></div>
+                        <div><p id="p">Item colth type:Plastic</p></div>
+                        <div><p id="p">Pattern:Flower</p></div>
+        </details>
+                <!--Bags button 5--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%205.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--Bags img 6--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%206.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/268032508/wyzbo_400.webp" alter="Travell Bag" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Travell Bag</h5>
+                <h5 id="td_h5_cost">Rs 311/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Travell Bag </p>
+                        <div><p id="p">Item:Bags</p></div>
+                        <div><p id="p">Item colth type:Cotton</p></div>
+                        <div><p id="p">Pattern:printeded</p></div>
+        </details>
+                <!--Bags button 6--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/BAGS%206.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            </tr>
+            
+        </table><br>  
+         <!--footware--> 
+         <hr>
+         <section>
+            <br>
+            <h6 id="second_h6"><h1 id="second_h1">footware</h1>
+            <div><h1 id="second_h1">from</h1></div>
+            <br><hr><br>
+
+        </section>     
+        <table>
+            <tr>
+            <td id="td">
+                 <!--footware 1--> 
+                 <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%201.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/117525185/t8xwx_512.webp" alter="Boys Sports Shoes" id="img"></figure>
+                 </a>
+                <h5 id="td_h5">Boys Sports Shoes</h5>
+                <h5 id="td_h5_cost">Rs 2345/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+                        <p id="p">Name:Boys Sports Shoes </p>
+                        <div><p id="p">Item: Footwear</p></div>
+                        <div><p id="p">Item type:Sports</p></div>
+                        <div><p id="p">Material:Synthetic</p></div>
+        </details>
+                <!--footware button 1-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%201.html" id="a"> 
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--footware 2--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%202.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/174156605/zabza_512.webp" alter="Boys Sandals" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Boys Sandals</h5>
+                <h5 id="td_h5_cost">Rs 323/- </h5>
+                <!--details-->
+                    <details id="details">
+                        <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Boys Sandals </p>
+            <div><p id="p">Item: Footwear</p></div>
+            <div><p id="p">Item  type:Casual</p></div>
+            <div><p id="p">Material:Plastic</p></div>
+        </details>
+                <!--footware button 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%202.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--footware 3--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%203.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/156387711/seprn_512.webp" alter="Women Sandals" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Women Sandals</h5>
+                <h5 id="td_h5_cost">Rs 501/- </h5>
+                 <!--details-->
+                 <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Women Sandals </p>
+            <div><p id="p">Item: Footwear</p></div>
+            <div><p id="p">Item type:Modern</p></div>
+            <div><p id="p">Material:Synthetic</p></div>
+    </details>
+                <!--footware button 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%203.html" id="a"> 
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            </tr>
+            
+        <tr>
+            <td id="td">
+                <!--footware 4--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%204.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/269507728/zdyn7_512.webp" alter="Running Shoes " id="img"></figure>
+                </a>
+                <h5 id="td_h5">Running Shoes</h5>
+                <h5 id="td_h5_cost">Rs 5088/- </h5>
+                 <!--details-->
+                 <details id="details">
+                    
+                    <h5 id="h5">Product Details</h5>
+                    <p id="p">Name:Running Shoes </p>
+                    <div><p id="p">Item: Footwear</p></div>
+                    <div><p id="p">Item type:Sports</p></div>
+                    <div><p id="p">Material:Leather</p></div>
+    </details>
+                <!--footware button 4--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%204.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--footware 5--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%205.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/239563343/gvl8j_512.webp" alter="Women Sandals" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Women Sandals</h5>
+                <h5 id="td_h5_cost">Rs 287/- </h5>
+                 <!--details-->
+                 <details id="details">
+                    <h5 id="h5">Product Details</h5>
+                    <p id="p">Name:Women Sandals </p>
+                    <div><p id="p">Item: Footwear</p></div>
+                    <div><p id="p">Item type:Indoor</p></div>
+                    <div><p id="p">Material:Plastic</p></div>
+    </details>
+                <!--footware button 5--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%205.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--footware 6--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%206.html" id="a">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/291349129/5mcgs_512.webp" alter="Ladies Slippers" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Ladies Slippers</h5>
+                <h5 id="td_h5_cost">Rs 167/- </h5>
+                 <!--details-->
+                 <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Ladies Slippers </p>
+            <div><p id="p">Item: Footwear</p></div>
+            <div><p id="p">Item type:Bathroom</p></div>
+            <div><p id="p">Material:Plastic</p></div>
+    </details>
+                <!--footware button 6--> 
+                <a href="file:///E:/vs%20code/final_meeshow/all/FOOTWEAR%206.html" id="a">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+        </tr>    
+        </table><br>   
+    </section>
+    <hr>
+            <!--become a reseller img-->
+        <section>
+            <img src="https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp" alter="Become a Reseller" id="last_img">
+        </section>
+
+
+            <!--electronics-->
+            <section>
+                <hr><br>
+                <h6 id="second_h6"><h1 id="second_h1">electronics</h1>
+                <div><h1 id="second_h1">from</h1></div>
+                <br><hr><br>
+            </section>        
+        <table>
+            <tr>
+            <td id="td">
+                 <!--electronics IMG 1-->
+                 <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%201.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/9768573/cb29a_400.webp" alter="Led Lights Combo" id="img"></figure>
+            </a>
+                <h5 id="td_h5">Led Lights Combo</h5>
+                <h5 id="td_h5_cost">Rs 342/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+                    <p id="p">Name:Led Lights Combo </p>
+                    <div><p id="p">Item: Electronics</p></div>
+                    <div><p id="p">Item Type:Combo</p></div>
+                    <div><p id="p">Material:Plastic</p></div>
+   </details>
+                <!--electronics BUTTON 1-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%201.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+            </a>
+            </td>
+            <td id="td">
+                <!--electronics IMG 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%202.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/194171689/cl7qz_512.webp" alter="Ear Pods" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Ear Pods</h5>
+                <h5 id="td_h5_cost">Rs 50/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Ear Pods </p>
+            <div><p id="p">Item:Electronic</p></div>
+            <div><p id="p">Item Type:single</p></div>
+            <div><p id="p">Material:Plastc</p></div>
+   </details>
+                <!--electronics BUTTON 2-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%202.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+            </a>
+            </td>
+            <td id="td">
+                <!--electronics IMG 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS3.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/209835908/hckxh_512.webp" alter="Led Torch Lights" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Led Torch Lights</h5>
+                
+                <h5 id="td_h5_cost">Rs 666/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Led Torch Lights </p>
+            <div><p id="p">Item: Electronics</p></div>
+            <div><p id="p">Item  Type:Single</p></div>
+            <div><p id="p">Material:Zinc wiring</p></div>
+   </details>
+                <!--electronics BUTTON 3-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS3.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+
+            </tr>
+            
+        <tr>
+            <td id="td">
+                <!--electronics IMG 4-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%204.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/299288129/3cssr_512.webp" alter="Water-proof Pouches" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Water-proof Pouches</h5>
+                <h5 id="td_h5_cost">Rs 332/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Water-proof Pouches </p>
+            <div><p id="p">Item:Electronics</p></div>
+            <div><p id="p">Item Type : Combo/p></div>
+            <div><p id="p">Material:Synthetic</p></div>
+   </details>
+            <!--electronics BUTTON 4-->
+            <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%204.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+            </a>
+            </td>
+            <td id="td">
+                <!--electronics IMG 5-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%205.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/237109869/luao9_512.webp" alter="Book Pouch" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Book Pouch</h5>
+                <h5 id="td_h5_cost">Rs 155/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+                    <p id="p">Name:Book Pouch </p>
+                    <div><p id="p">Item: Electronics</p></div>
+                    <div><p id="p">Item Type :Single</p></div>
+                    <div><p id="p">Material:Synthetic</p></div>
+   </details>
+                <!--electronics BUTTON 5-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%205.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+            <td id="td">
+                <!--electronics IMG 6-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%206.html">
+                <figure id="figure"><img src="https://images.meesho.com/images/products/237109869/luao9_512.webp" alter="Book Pouches" id="img"></figure>
+                </a>
+                <h5 id="td_h5">Book Pouches</h5>
+                <h5 id="td_h5_cost">Rs 345/- </h5>
+                <!--details-->
+                <details id="details">
+                    <h5 id="h5">Product Details</h5>
+            <p id="p">Name:Book Pouches</p>
+            <div><p id="p">Item: Electronics</p></div>
+            <div><p id="p">Item  type:Combo</p></div>
+            <div><p id="p">Material:Synthetic</p></div>
+   </details>
+                <!--electronics BUTTON 6-->
+                <a href="file:///E:/vs%20code/final_meeshow/all/ELECTRONICS%206.html">
+                <input type="button" name="button" value="Buy now" id="td_h5_button">
+                </a>
+            </td>
+        </tr>    
+        </table>   
+    </section>
+    <br><hr>
+
+        
+
+        <!--footer-->
+        
+            <footer id="foot">
+               <table>
+                <tr>
+                    <td id="td_01">
+                <section>
+                <!--left of page-->
+                <div><h1>Shop non-stop on Meeshow</h1><br></div>
+                <div><p>Trusted by more than ! crore indians<br>
+                cash on Delivery|Free Delivery</p></div>
+            </td>
+              <td id="td_02">
+                <!--center line-->
+                <div><h5 id="td_02_h5">Careers</h5></div>
+                <div><h5 id="td_02_h5">Vecome a Supplier</h5></div>
+                <div><h5 id="td_02_h5">Our Influencer program</h5></div>
+                <div><h5 id="td_02_h5">Hall of Fome</h5></div>
+            </td>
+                
+               <td id="td_03">
+                <!--center line 2-->
+                <div><h6 id="td_02_h6">Legal and policies</h6></div>
+                <div><h6 id="td_02_h6">Meeshow Tech Blog</h6></div>
+                <div><h6 id="td_02_h6">Notices and Returns</h6></div>
+            </td>
+                <td id="td_04">
+                <!--complete right of page icons-->
+                <span><img src="https://cdn-icons-png.flaticon.com/256/6422/6422199.png" alter="fb" id="icons"></span>
+                <span><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alter="insta" id="icons"></span>
+                <span><img src="https://cdn-icons-png.flaticon.com/512/1051/1051382.png" alter="twter" id="icons"></span>
+                
+                </section>
+            </td>
+            </tr>
+            </table>
+            </footer>
+
+        
+</body>
+</html>
+
